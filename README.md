@@ -1,0 +1,2 @@
+# my-projects
+Progress Bar project shows how rating shown on websites work, progress bar display proress in percentage in accordance with number of rating recieved.
