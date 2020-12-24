@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Progress Bar</title>
+
+	<!-- external css link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Montserrat:wght@200&family=Nanum+Gothic&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- heading -->
+	<h1>Progress Bar</h1>
+
+	<section id="section-1" class="spaces section-style">
+	
+		<!-- progress bar simulation buttons -->
+		<div id="buttonBox">
+			<p>Click " + " to see increase progress and " - " to decrease.</p>
+			<button onclick="IncDec('dec')" id="dec" class="btn">-</button>
+			<button onclick="IncDec('inc')" id="incr" class="btn">+</button>
+		</div>
+			
+		<!-- progress bar -->
+		<div id="progressBar" class="barStyle">
+
+			<!-- progress indicator -->
+			<div id="indicator" class="indicatorStyle">
+				
+				<!-- progress percentage -->
+				<div id="percentBox"><span id="percent"></span>%</div>
+			
+			</div>
+
+		</div>
+	
+	</section>
+
+
+	<section class="spaces section-style">
+		
+		<!-- Rating Box -->
+		<div id="rate-box" class="spaces">
+		
+			<label for="uFeed">
+				<p>Please rate my efforts between 1 and 10.</p>
+				<input id="uFeed" type="number" min="1" max="10" name="add" placeholder="Rating" required="required">
+			</label>
+		
+			<input type="button" id="feedBtn" name="btn" onclick="addToFeed()" class="addbtn" value="Add !" required="required">
+		
+		</div>
+
+
+		<!-- progress bar -->
+		<div class="barStyle">
+
+			<!-- progress indicator -->
+			<div id="rating-indicator" class="indicatorStyle">
+				
+				<!-- progress percentage -->
+				<div id="rating-percentBox"><span id="rating-percent"></span>%</div>
+			
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- Footer -->
+	<footer>		
+		<div>Progress Bar Project By Tushar Mathur</div>
+		<div>Github: <a href="https://github.com/tushar123-hash/my-projects">tushar123-hash</a></div>
+		<div>Linked In: <a href="https://www.linkedin.com/in/tushar-mathur-65818515b/">Tushar Mathur</a></div>
+		<div>Project Made: 22nd Dec 2020</div>
+	</footer>
+
+
+	<script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>

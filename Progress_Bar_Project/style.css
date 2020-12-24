@@ -1,0 +1,125 @@
+body{
+	margin: 0;
+	padding: 0;    
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(202, 202, 202, 0.2);
+}
+
+*{
+	box-sizing: border-box;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.spaces{
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+}
+
+h1{
+	color: #FFF;
+	margin: 0;
+	text-align: center;
+	background: #666666;
+	padding: 0.6em;
+}
+
+.section-style{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#buttonBox{
+	padding: 1em;
+}
+
+.btn{
+	border: none;
+	padding: 0.7em 3em 0.7em 3em;
+	font-size: 16px;
+	background: black;
+	color: #FFF;
+}
+
+.barStyle{
+	width: 80%;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 50px;
+	letter-spacing: 2px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.indicatorStyle{
+	width: 0%;
+	padding: 0.8em 0em 0.8em 0em;
+	background: orange;
+	border-radius: inherit;
+	transition-duration: 0.8s;
+}
+
+#percentBox{
+	width: 100%;
+}
+
+#percentBox{
+	margin-left: 1em;
+}
+
+input{
+	border: none;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 1em;
+	outline: none;
+}
+
+.addbtn{
+	background: black;
+	color: white;
+}
+
+#rating-percent{
+	margin-left: 1em;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 2em;
+	background: #666666;
+	color: #FFF;
+}
+
+footer div{
+	display: inline;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-left: 4px solid rgba(255, 255, 255, 0.6);
+}
+
+footer div:nth-of-type(1){
+	border-left: none;
+}
+
+footer a{
+	color: #FFF;
+}
+
+@media(max-width: 1100px){
+	footer div{
+		display: block;
+		border-left: none;
+		text-align: left;
+	}
+	.spaces{
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+	}
+
+	.barStyle{
+		width: 90%;
+	}
+}
