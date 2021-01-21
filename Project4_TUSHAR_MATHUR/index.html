@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do list</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+
+<!-- main container -->
+<section id="mainContainer">
+
+	<!-- todo section -->
+	<div id="container">
+
+		<!-- Heading -->
+		<h1>To Do List</h1>	
+
+		<!-- todo input control -->
+		<div id="inputControlBox">
+		
+		<input id="inputValue" type="text" name="txt" placeholder="Add task to your todo">
+
+		<input type="button" id="btn" name="btn" value="Add" onclick="add_to_todo()">
+		
+		</div>
+		
+			<!-- todo list item -->
+			<ul >
+				<li>Project 1 - Bare Bone HTML Portfolio</li>
+				<li>Project 2 - Add CSS to Project 1</li>
+				<li>Project 3 - Build Responsive Portfolio using Bootstrap</li>
+				<li>Project 4 - Build TodoList</li>
+				<li>Project 5 - Host a portfolio website with custom domain</li>
+			</ul>
+
+		<div id="addMore">Add items to todo</div>
+
+	</div>
+
+
+	<!-- todo image -->
+	<div id="imageContainer">
+		<img src="todo.png">
+	</div>
+
+</section>
+
+<!-- todo JAVASCRIPT link -->
+<script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>
