@@ -1,0 +1,191 @@
+html, body{
+scroll-behavior: smooth;
+font-size: 16px;
+}
+
+*{
+line-height: 1.6;
+letter-spacing: 2px;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-weight: 400;
+font-family: arial;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+
+
+#mainContainer{
+display: flex;
+justify-content: space-between;
+align-items: stretch;
+align-content: center;	
+margin-top: 20px;
+}
+
+#blogSection{
+	flex-basis: 70%;	
+}
+
+#introductionBox{
+padding: 1em;
+height: 90vh;
+}
+
+.blogInnerBox{
+	max-width: 800px;
+	border: 1px solid #d6d6d6;
+	margin: 40px auto;
+	border-radius: 5px;
+}
+
+.blogs{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
+
+.blogImageBox{
+	flex-basis: 30%;
+}
+
+.blogImage{
+	width: 100%;
+	height: 200px;
+}
+
+.description{
+	padding-left: 15px;
+	text-align: justify;
+	flex-basis: 70%;
+}
+
+.blogBoxBottom{
+	display: flex;
+	justify-content: space-evenly;
+	border-top: 1px solid #d6d6d6;
+}
+
+.blogBoxBottom span{
+padding: 1em;
+width: 100%;
+text-align: center;
+position: relative;
+}
+
+.blogBoxBottom span::after{
+content: '';
+width: 0%;
+transition-duration: 0.5s;
+position: absolute;
+border-bottom: 2px solid #000;
+left: 0;
+bottom: 0;
+}
+
+.blogBoxBottom span:hover::after{
+	content: '';
+	width: 100%;
+	border-bottom: 2px solid #000;
+}
+
+#moreBtnBox{
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#moreBtnBox button{
+	border: none;
+	background: transparent;
+}
+
+/*Video Slider*/
+#videoSliderBox {
+	max-width: 900px;
+	margin: 60px auto;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	overflow: hidden;
+position: relative;
+}
+
+#vidLeftBtn{
+	position: absolute;
+	left: 0;
+}
+
+#vidRightBtn{
+	position: absolute;
+	right: 0;	
+}
+
+.videoBox {
+	max-width: 400px;
+	margin-right: 20px;
+}	
+
+.videoBoxVids{
+	width: 100%;
+	height: 250px;
+}
+
+.videoDescription {
+text-align: center;
+padding: 10px 0px 10px 0px;
+border: 1px solid green;
+}
+
+
+
+#sideBlock{
+	flex-basis: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+#authprofile{
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	box-shadow: 2px 2px 10px #CCCCCC;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#authorDP{
+	width: 100%;
+}
+
+.quizBox{
+	margin: 40px auto;
+	border: 1px solid #CCCCCC;
+	padding: 1em 0.5em 1em 0.5em;
+	max-width: 300px;
+	border-radius: 5px;	
+}
+
+.quizBox ol li{
+list-style-type: none;
+padding: 5px;
+}
+
