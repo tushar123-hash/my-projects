@@ -1,0 +1,461 @@
+*{
+	font-family: arial;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	letter-spacing: 0.05em;
+	word-spacing: 0.1em;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	/* color: rgba(243, 226, 226, 0.5); */
+}
+hr{
+	background: rgba(209, 19, 215, 0.3);
+	border: none;
+	height: 3px;
+	width: 30px;
+}
+
+
+a{
+	text-decoration: none;
+	/* color: rgba(10, 10, 10, 0.5); */
+	color: #000;
+}
+
+.price{
+	text-decoration: line-through red;	
+}
+
+#section_1{
+	background: url(bg/bg_1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+}
+
+#section_1 h1{
+	margin: 0;
+	padding: 10px 5px;
+}
+
+#header{
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0px 5px 7px rgba(178, 178, 178, 0.3);
+	width: 100%;
+	background: #FFF;
+}
+
+.logoD{
+	font-family: gabriola;
+	font-weight: 800;
+	font-size: 30px;
+}
+
+.gcolor{
+	color: #ff5d00;
+}
+
+.acolor{
+	color: #b20023;
+}
+
+.dcolor{
+	color: #2626C8;
+}
+
+.icolor{
+	color: #C00007;
+}
+
+.lcolor{
+	color: #E904ED;
+}
+
+
+#section_1 #logo{
+ 	width: 150px;
+	align-self: center;
+	margin-left: 10px;
+}
+
+#header ul{
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+#header li:hover{
+	color: #FFFF;
+	background: #000;
+	transition: 0.8s;
+}
+
+#header li{
+	border: 1px solid black;
+	padding: 10px 20px 10px 20px;
+	margin: 0px 20px 0px 20px;
+}
+
+#login{
+	position: relative;
+	background: #FFF;
+	z-index: 300;
+}
+
+#top_course_box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: center;
+	height: 100vh;	
+}
+
+#top_course_box #effectText{
+	font-size: 50px;
+	background: none;
+	width: 400px;
+	height: 300px;
+	padding: 10px;
+	background: #FFF;
+}
+
+#topCourse{
+	box-shadow: 10px 10px 10px rgba(204, 204, 204, 0.8);
+	border-radius: 5px;
+	width: 300px;
+	background: #FFF;
+}
+
+#topCourse video{
+	width: 100%;
+}
+
+#topCourse h4{
+	padding: 10px;
+	margin: 0;
+}
+
+#topCourse li{
+padding: 5px 0px 5px 0px;
+}
+
+.startBtn{
+	border: none;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+#bottomLine{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*
+==================
+	SECTION 2
+==================
+*/
+
+#section_2{
+	background: url(bg/bg_2.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wspcr{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+}
+
+.wspcrFlex{
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: stretch;
+	width: 100%;
+}
+
+.wspcrFlex img{
+	width: 200px;
+	height: 200px;
+	box-shadow: 40px 40px 10px rgba(204, 209, 204, 0.8)	;
+	border-radius: 5px;
+}
+
+.wspcrFlex ul{
+line-height: 2.5em;
+list-style-type: none;
+font-weight: bold;
+}
+
+#wscprFlex2{
+	margin-top: 3em;
+}
+/*
+==================
+	SECTION 3
+==================
+*/
+
+#section_3{
+	background: url(bg_3.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+#recommedCourse {
+ display: flex;
+ justify-content: space-between;
+ align-items: stretch;
+ width: 70%;
+}
+
+#section_3 #bookImg {
+width: 350px;
+height: 400px;
+flex-basis: 40%;
+}
+
+#courseList{
+	padding: 10px;
+	flex-basis: 60%;
+	align-self: stretch;
+	position: relative;
+}
+
+
+.courseListBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 10px 10px 30px rgba(204, 204, 204, 0.8);
+	background-color: #FFF;
+	width: 200px;
+	height: 250px;
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	bottom: 0;
+	right: 0;
+}
+
+.clb1 {
+	left: 60px;
+	z-index: 10;
+}
+
+.clb2 {
+	left: 140px;
+	z-index: 8;
+}
+
+.clb3 {
+	left: 220px;
+	z-index: 6;
+}
+
+.clb4 {
+	left: 300px;
+	z-index: 4;
+}
+
+.CLBimg {
+	width: 100%;
+	height: inherit;
+}
+
+.CLtitle {
+	margin-left: 5px;	
+}
+
+.animSec {
+	transition: 1s;
+	z-index: 100;
+}
+
+/*
+============================
+	SECTION 4 (Trend block)
+============================
+*/
+
+#section_4 {
+	background: url(bg/bg_3.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#graph{
+width: 550px;
+}
+
+#graph table, tr, td, th{
+	border-collapse: collapse;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#graph table{
+	width: 100%;
+	border: none;
+}
+
+
+#graph th{
+	width: 20%;
+	text-align: right;
+	padding-right: 15px;
+	border: none;
+}
+
+#graph td{
+	width: 80%;
+	border-left: 1px solid rgb(211, 207, 207);
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#graph #lstd{
+	border-bottom: 1px solid rgb(211, 207, 207);
+	padding-bottom: 25px;
+}
+.ProgressBox{
+	border: 1px solid black;
+	border: 1px solid #FFF;
+}
+
+.bar{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	background: #00d0ff;
+}
+
+#quiz{
+	width: 300px;
+	border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(211, 207, 207), -5px -5px 10px rgb(211, 207, 207);
+	padding: 10px;
+}
+
+#voteBtn{
+	border: none;
+	padding: 10px;
+	background: none;
+	color: #D113D7;
+	font-weight: bold;
+	width: 100%;
+}
+
+/*
+=================
+	SECTION 5
+=================
+*/
+
+#section_5{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(bg/bg_4.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}	
+
+#blogBox{
+	width: 600px;
+}
+
+.blogsTitle{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px 10px 15px;
+	border: 1px solid rgba(204, 204, 204, 0.8);
+	margin-top: 10px;
+}
+
+.blogsTitle h5, .blogsTitle h6{
+padding: 0;
+margin: 0;
+}
+
+#blogBox #moreBlogBtn{
+	text-align: center;
+	border: none;	
+}
+
+#blogBox #msg{
+	float: right;
+}
+
+
+
+
+/*
+==================
+	SECTION 7
+==================
+*/
+
+#section_7{
+	border-bottom: 10px solid #000;
+}
+
+#otherContact{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+#otherContact div{
+	width: 400px;
+}
+
+#socialConnect h5{
+text-align: center;	
+}
+
+#socialConBox{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+}
+
+#otherContact ul{
+	line-height: 30px;
+}
+
+#otherContact table, tr, td{
+	border-collapse: collapse;
+	padding: 10px 5px 10px 5px;
+	text-align: left;
+}
