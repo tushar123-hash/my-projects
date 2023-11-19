@@ -1,0 +1,146 @@
+body{
+	font-family: Courgette;
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	box-sizing: border-box;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+#back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #000;
+	padding: 0.4em;
+	word-spacing: 5px;
+	text-decoration: none;
+	background: white;
+}
+
+#bg-image{
+	width: 40%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#booking-block{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	position: absolute;
+	top: 18%;
+	left: 14%;
+}
+
+.blocks-style{
+	color: white;
+	padding: 1em;
+	background: rgba(0, 0, 0, 1);
+	flex-basis: 50%;
+}
+
+h2{
+	text-align: center;
+	margin: 0 auto;
+	width: 70%;
+	background: rgba(253, 165, 0, 0.4);
+	padding: 0.2em 0em 0.2em 0em;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#room-booking h2{
+	background: rgba(150, 1, 1, 1);
+}
+
+#table-booking h2{
+	background: rgba(255, 165, 0, 1);
+}
+
+input{
+	width: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	border: none;
+	padding: 0.5em;
+	color: #FFF;
+	border-radius: 5px;
+}
+
+[placeholder]{
+font-weight: bold;
+}
+
+input:focus{
+	background: rgba(0, 0, 0, 1);
+	color: white;
+}
+
+[type=submit]{
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	padding: 1em;
+	transition-duration: 1s;
+}
+
+
+#room-booking [type=submit]{
+	background: rgba(150, 1, 1, 1);
+}
+
+#room-booking [type=submit]:hover{
+	background: rgba(150, 1, 1, 0.8);
+}
+
+#table-booking [type=submit]{
+	background: rgba(255, 165, 0, 1);
+}
+
+#table-booking [type=submit]:hover{
+	background: rgba(255, 165, 0, 0.8);
+}
+
+
+#mBtn{
+/*	background: orange;
+	padding: 10px 18px 10px 18px;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6), 1px 1px 4px rgba(0, 0, 0, 0.6);
+	font-size: 20px;
+	font-weight: bold;*/
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+#bg-image{
+	display: none;
+}
+
+#booking-block{
+	width: 80%;
+	margin: 20px auto;
+	flex-direction: column;
+	position: static;
+	top: 0;
+	left: 0;
+}
+
+.blocks-style{
+	width: 100%;
+	color: white;
+	padding: 1em;
+	background: rgba(0, 0, 0, 1);
+	margin-top: 20px;
+}
+}

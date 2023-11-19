@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title> &#127970; Mealtrain Inn</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome Link-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- External CSS Link  --> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!--  Google Font Link -->
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Francois+One|Inconsolata|Mukta|Pacifico|Pontano+Sans|Quicksand|Righteous|Yanone+Kaffeesatz&display=swap" rel="stylesheet"> 
+
+  <!--  Google Font Link -->  
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Do+Hyeon&family=Open+Sans+Condensed:ital,wght@1,300&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+
+<button id="shortcut" onclick="navResize()"> Up </button>
+
+<!-- Navigation Bar -->
+
+<!-- Hotel Name (main heading) -->
+<div id="main-heading"> <a href="#"> <i class="fas fa-hotel"></i> MEALTRAIN INN </a> </div>
+
+<nav>
+
+  <!-- Navigation Tools -->
+  <ul id="nav-ul">
+    <li class="nav-li"><a href="#"  > Home </a></li>
+    <li class="nav-li"><a href="#section-3" > Menu </a></li>
+    <li class="nav-li"><a href="service.html"> Services </a></li>
+    <li class="nav-li"><a href="blog.html"> Blog </a></li>
+    <li class="nav-li"><a href="#section-5"> Conact </a></li>
+    
+  </ul>
+
+
+</nav>
+
+<!-- ---------- Log in and sign up button ---------- -->
+<div id="log-sign-btn" onclick="openForms()" class="nav-li"> <a href="#" > Log In  </a> </div>
+  
+</header>
+
+
+<!-- ========= Section-1 ========= -->
+
+<section id="section-1">
+
+<!-- Room Availability Search Form -->
+<div id="check-availability" class="check-avail-pos">
+
+  <h2> <i class="fas fa-bed"> </i> Restro123 </h2>
+  
+  <form>
+    
+  <table>
+    <tr>
+       <td> <label for="checkIn" for="checkIn"> <b>Check In</b> </label> </td>  
+       <td> <input id="checkIn" type="date" name="chk1" placeholder="check in date" required="required"> </td>  
+    </tr>
+    
+    <tr>
+       <td> <label for="checkOut" for="checkOut"> <b>Check Out</b> </label> </td> 
+       <td> <input id="checkOut" type="date" name="chk1" placeholder="check out date" required="required"> </td> 
+    </tr>
+
+    <tr>
+      <td> <label for="adults" for="adults"> <b>Adults</b> </label> </td> 
+      <td> <input id="adults" type="number" name="chk1" min="1" max="10" placeholder="Number of adults" required="required"> </td> 
+    </tr>
+
+    <tr>
+       <td> <label for="kids" for="kids"> <b>kids</b> </label> </td> 
+       <td> <input id="kids" type="number" name="chk1" min="1" max="10" placeholder="Number of kids" required="required"> </td> 
+    </tr>
+
+    <tr>
+      <td colspan="2"> <button type="submit"><i class="fas fa-search"></i> Search</button></td>
+    </tr>
+
+  </table>
+
+  </form>
+
+</div>
+
+</section>
+
+<!-- ========= Section-1 End ========= -->
+
+
+
+<!-- ========= Section-2 ========= -->
+
+<section id="section-2" class="section-padding">
+ <!-- Why us -->
+
+ <aside id="whyUs-block">
+
+   <h1 class="subHeading">Why Us ?</h1>     
+
+   <p><i class="fas fa-plane"></i> Near Airport </p>
+
+   <p><i class="fas fa-car"></i> Car Service </p>
+
+   <p><i class="fab fa-pagelines"></i> Healthy Evironment </p>
+
+   <p><i class="fas fa-wifi"></i> Free Wifi </p>
+ 
+   <p><i class="fas fa-spa"></i> Spa</p>
+
+ </aside>
+
+
+<!-- Image Gallery -->
+
+ <aside id="gallery-block">
+
+  <div id="gallery" class="gallery-pos">
+
+     <h1 class="subHeading">Gallery</h1>
+  
+     <!-- Image Container Box -->    
+     <div id="imgBox">
+       <img class="galleryImage-size" src="image/14_image.jpg" alt="tasty pizza">
+       <img class="galleryImage-size" src="image/20_image.jpg" alt="sweet cakes">
+       <img class="galleryImage-size" src="image/italian.jpg" alt="itallian pasta">
+       <img class="galleryImage-size" src="image/01_mexicon.jpg" alt="chiken role">
+       <img class="galleryImage-size" src="image/donut1.jpg" alt="donut">
+       <img class="galleryImage-size" src="image/06_bakery.jpg" alt="masala pan">
+     </div>  
+
+  </div>
+  
+ </aside>
+
+</section>
+
+<!-- ========= Section-2 End ========= -->
+
+
+<!-- ========= Section-3 ========= -->
+
+<section id="section-3" class="section-padding">
+
+<div id="menu">
+
+  <h2 class="subHeading">Menu</h2>  
+
+  <div id="item-category">
+    <button id="veg-btn" class="dish-type categ-highlight" > &#127822; Vegetarian</button>
+    <button id="nVeg-btn" class="dish-type" > &#127831; Non-Vegetarian</button>
+    <button id="sal-btn" class="dish-type" > &#127860; Salad</button>
+    <button id="drink-btn" class="dish-type" > &#127864; Drinks</button>
+  </div>
+
+
+  <div id="menu-items">
+  
+
+    <div id="veg" class="item-box">
+  
+    <div class="item-and-names">
+      <h5>Margherita Pizza</h5>
+      <p>Fresh tomatoes, fresh mozzarella, fresh basil <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Chicken Burger</h5>
+      <p>Crispy Chicken, fresh chicken, fresh vegies <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Butter Chicken and Naan Bread</h5>
+      <p>Fresh Chicken, flavourful sauce, fresh bread <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Fried Chicken</h5>
+      <p>Fresh Chicken, Crispy Chicken, fresh vegies <span class="price">₹250</span></p>
+    </div>
+
+    <div class="item-and-names">
+      <h5>Chilli Chicken</h5>
+      <p>Fresh Chicken, Crispy Chicken, Hot Chilli <span class="price">₹250</span></p>
+    </div>
+  
+    </div>
+  
+
+    <div id="n-veg" class="hide item-box">
+  
+    <div class="item-and-names">
+      <h5>Margherita Pizza</h5>
+      <p>Fresh tomatoes, fresh mozzarella, fresh basil <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Chicken Burger</h5>
+      <p>Crispy Chicken, fresh chicken, fresh vegies <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Butter Chicken and Naan Bread</h5>
+      <p>Fresh Chicken, flavourful sauce, fresh bread <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Fried Chicken</h5>
+      <p>Fresh Chicken, Crispy Chicken, fresh vegies <span class="price">₹250</span></p>
+    </div>
+
+    <div class="item-and-names">
+      <h5>Chilli Chicken</h5>
+      <p>Fresh Chicken, Crispy Chicken, Hot Chilli <span class="price">₹250</span></p>
+    </div>
+  
+    </div>
+  
+
+    <div id="salad" class="hide item-box">
+  
+    <div class="item-and-names">
+      <h5>Margherita Pizza</h5>
+      <p>Fresh tomatoes, fresh mozzarella, fresh basil <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Chicken Burger</h5>
+      <p>Crispy Chicken, fresh chicken, fresh vegies <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Butter Chicken and Naan Bread</h5>
+      <p>Fresh Chicken, flavourful sauce, fresh bread <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Fried Chicken</h5>
+      <p>Fresh Chicken, Crispy Chicken, fresh vegies <span class="price">₹250</span></p>
+    </div>
+
+    <div class="item-and-names">
+      <h5>Chilli Chicken</h5>
+      <p>Fresh Chicken, Crispy Chicken, Hot Chilli <span class="price">₹250</span></p>
+    </div>
+  
+    </div>
+  
+
+    <div id="drinks" class="hide item-box">
+  
+    <div class="item-and-names">
+      <h5>Margherita Pizza</h5>
+      <p>Fresh tomatoes, fresh mozzarella, fresh basil <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Chicken Burger</h5>
+      <p>Crispy Chicken, fresh chicken, fresh vegies <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Butter Chicken and Naan Bread</h5>
+      <p>Fresh Chicken, flavourful sauce, fresh bread <span class="price">₹250</span></p>
+    </div>
+    
+    <div class="item-and-names">
+      <h5>Fried Chicken</h5>
+      <p>Fresh Chicken, Crispy Chicken, fresh vegies <span class="price">₹250</span></p>
+    </div>
+
+    <div class="item-and-names">
+      <h5>Chilli Chicken</h5>
+      <p>Fresh Chicken, Crispy Chicken, Hot Chilli <span class="price">₹250</span></p>
+    </div>
+  
+    </div>
+  
+
+
+
+  </div>
+
+</div>
+
+</section>  
+
+<!-- ========= Section-3 End ========= -->
+
+
+<!-- ========= Section-4 ========= -->
+
+<section id="section-4" class="section-padding">
+
+<h2 class="subHeading">Meet Our Team </h2>
+
+<div id="team-block">
+  
+  <div class="info-box">
+
+    <img class="teamImg" src="image/01_service.jpg">
+    
+      <div>Sr. Chef</div>
+      <div>Mr Hamsworth</div>
+  
+  </div>
+  
+  <div class="info-box">
+  
+    <img class="teamImg" src="image/06_chef.jpg">
+  
+      <div>Jr. Chef</div>
+      <div>Mr Hamsworth</div>
+  
+  </div>
+  
+  <div class="info-box">
+  
+    <img class="teamImg" src="image/08_chef.jpg">  
+  
+      <div>Jr. Chef</div>
+      <div>Mr Hamsworth</div>
+
+  </div>  
+  
+  <div class="info-box">
+  
+    <img class="teamImg" src="image/09_chef.jpg">
+  
+      <div>Jr. Chef</div>
+      <div>Mr Hamsworth</div>
+
+  </div>  
+  
+  <div class="info-box">
+  
+    <img class="teamImg" src="image/11_chef.jpg">  
+  
+      <div>Jr. Chef</div>
+      <div>Mr Hamsworth</div>
+  
+  </div>  
+
+  <div class="info-box">
+  
+    <img class="teamImg" src="image/13_chef.jpg">  
+  
+      <div>Jr. Chef</div>
+      <div>Mr Hamsworth</div>
+  
+  </div>  
+
+</div>
+
+</section>
+
+<!-- ========= Section-4 End ========= -->
+
+
+
+<!-- ========= Section-5 ========= -->
+
+<section id="section-5" class="section-padding">
+
+    <aside id="contact-block">
+    
+    <!-- ----------- Contact block ------------- -->
+    <h3> Contact </h3>
+    
+    <form>
+    
+      <div>
+        <input type="text" name="cEml" placeholder="Email" required="required">
+      </div>
+      
+      <div>
+        <textarea rows="8" placeholder="Describe your issue" required="required"></textarea>
+      </div>
+      
+      <div>
+        <input id="submit-btn" type="submit" name="sendBtn" value="send">
+      </div>      
+    
+    </form>      
+    
+    </aside>
+
+
+<!-- --------- Map Block ---------- -->
+    <aside id="map-block">
+
+      <div id="GoToTopBtn">
+        <a href="#section-1">Go to top</a>
+      </div>
+
+      <div>
+        <img id="mapImg" src="image/map.png">
+      </div>
+
+      <div>  
+        <a href="facebook.com" class=" media-icon"> <i class="fab fa-facebook-f" ></i> </a>
+        <a href="instagram.com" class=" media-icon"> <i class="fab fa-instagram " ></i> </a>
+        <a href="linkedin.com" class=" media-icon"> <i class="fab fa-linkedin-in "></i> </a>
+        <a href="twitter.com" class=" media-icon"> <i class="fab fa-twitter "></i> </a>
+      </div> 
+ 
+    </aside>
+
+</section>
+
+<!-- ============= Section-5 End ============== -->
+
+
+
+<!-- ========= Footer ========= -->
+
+<footer>
+
+  <address>Address: 55 wall street, Washington, USA</address>
+
+  <div>Contact: +888999888999</div>
+
+  <div>Fax: 000-555-555</div>
+
+  <div>Fax: 000-555-555</div>
+
+</footer>
+
+<!-- ========= Footer End ========= -->
+
+
+
+<!-- ============ Log In And Sign Up Forms ========== -->
+<div id="form-container">
+
+  <div id="close" onclick="closeBtn()"> X </div>  
+
+  <!-- ---------- Log In Form ----------- -->
+  <form method="GET">
+
+    <div id="logIn" class="log-sign-style">
+      <h2>Log In</h2>
+      <p> <input type="email" name="eml" placeholder="Resgistered Email" required="required"> </p>
+      <p> <input type="password" name="lpswd" placeholder="Password" required="required"> </p>
+      <p> <input id="logInBtn" type="submit" name="sbm" value="Log me in" required="required"> </p>
+    </div>
+  </form>
+
+<?php  
+  if ($_POST['sbm']) {
+    echo "Log In";
+  }
+?>
+
+
+  <!-- ---------- Sign Up Form ----------- -->
+  <form method="POST">
+
+    <div id="signUp" class="log-sign-style hide">
+    
+      <h2>Sign Up</h2>
+    
+      <p> <input type="text" name="ufn" placeholder="First Name" required="required"> <sup>*</sup> </p> 
+      <p> <input type="text" name="ufn" placeholder="Last Name" required="required"> <sup>*</sup> </p>
+      <p> <input type="email" name="seml" placeholder="Email" required="required"> <sup>*</sup> </p>
+      <p> <input type="password" name="pswd" placeholder="Password" required="required"> <sup>*</sup> </p>
+      <p> <input type="password" name="rpswd" placeholder="Re-Password" required="required"> <sup>*</sup> </p>
+      <p> <input id="signUpBtn" type="submit" name="sbm_btn2" value="Sign Up" required="required"> </p>
+    
+    </div>
+ 
+   
+    <div>
+   
+      <p>
+        <span id="msg">create new account</span>
+        <a href="#" onclick="swapForm()"> <span id="form-type"> Sign Up </span> </a> 
+      </p>
+      
+      <p>
+        <a href="#">Forgot password?</a>
+      </p>
+    
+    </div>  
+  
+  </form> 
+
+</div>
+
+<section>
+
+</section>
+
+<!-- ============== javaScript .js File ============= -->
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

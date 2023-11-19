@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mealtrain Inn</title>
+	<meta charset="UTF-8">
+  
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	
+<!-------------------------------------------------------------------------------------------------------->
+	
+	<!-- link to font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-------------------------------------------------------------------------------------------------------->
+
+	<!-- link to google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Francois+One|Miss+Fajardose|Pacifico|Righteous|Yanone+Kaffeesatz" rel="stylesheet"> 
+
+<!-------------------------------------------------------------------------------------------------------->
+	
+	<!-- link to google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Anton|Kanit|Lilita+One|Lobster" rel="stylesheet"> 
+
+<!-------------------------------------------------------------------------------------------------------->
+	<!-- css link to service.css -->
+	<link rel="stylesheet" type="text/css" href="service.css">
+
+<!-------------------------------------------------------------------------------------------------------->
+
+</head>
+<body>
+
+<!-- back button -->
+<a href="index.html" id="back" > <i class="fas fa-arrow-circle-left"></i> <span>Mealtrain Inn</span></a>
+
+<div>
+	<img id="bg-image" src="image/03_hotel.jpg">
+</div>
+
+<!-- =========== main container =========== -->	
+<section id="booking-block">
+
+	<!-- ------------ Room Booking ------------- -->	
+	<div id="room-booking" class="blocks-style" onmouseover="highLight('brown')">
+	
+		<h2 id="roomHead"> Room Booking </h2>
+	
+		<form>
+			<p><input type="text" name="fnm" placeholder="First Name" required="required"></p>
+			<p><input type="text" name="lnm" placeholder="Last Name" required="required"></p>
+			<p><input type="date" name="date" required="required"></p> 
+			<p><input type="time" name="date" required="required"></p>  
+			<p><input type="number" name="num" placeholder="Number of person" min="1" max="10" required="required"></p>  
+			<p><input id="roomBtn" type="submit" name="sbm" value="Proceed !!!"> </p>
+		</form>
+	
+	</div>
+
+
+	<!-- ------------ Table Booking ------------- -->	
+	<div id="table-booking" class="blocks-style" onmouseover="highLight('orange')">
+	
+		<h2 id="tableHead"> Table Booking </h2>
+	
+		<form>
+			<p><input type="text" name="fnm" placeholder="First Name" required="required"></p>
+			<p><input type="text" name="lnm" placeholder="Last Name" required="required"></p>
+			<p><input type="date" name="date" required="required"></p> 
+			<p><input type="time" name="date" required="required"></p>  
+			<p><input type="number" name="num" placeholder="Number of person" min="1" max="10" required="required"></p>  
+			<p><input id="tableBtn" type="submit" name="sbm" value="Book Table !" required="required"> </p>
+		</form>
+	
+	</div>
+
+</section> 
+
+
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
