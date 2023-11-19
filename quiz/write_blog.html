@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Write Blog</title>
+
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		main {
+			display: flex;
+			justify-content: center;
+			align-items: stretch;
+			width: 100%;
+		}
+
+		#part1 {
+			border: 1px solid green;
+			width: 70%;
+		}
+
+		#part2 {
+			border: 1px solid pink;
+			width: 30%;
+		}
+
+		#mainContainer {
+			text-align: justify;
+			margin: 0px auto;
+			border: 1px solid #000;
+			max-width: 900px;
+			padding: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.paragraphs {
+			line-height: 1.5em;
+			letter-spacing: 0.1em;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<main>
+		<section id="part1">
+			<h1 contenteditable="true">Title</h1>
+			<div id="mainContainer" contenteditable="true">sdsa</div>
+			<p contenteditable="true">dsfdfsdfsa</p>
+			<div id="mainContainer">sdsa</div>
+		</section>
+
+		<section id="part2">
+			<button onclick="cn()">This button creates text area</button>
+		</section>
+
+	</main>
+
+
+	<section id="hh"></section>
+
+	<!-- append elementsand copy their source code suing js innerhtml property ans store it to databse and render it to webpage on load.  -->
+
+
+	<script>
+
+		var main = document.querySelector("main");
+		function cn() {
+			var textArea = document.createElement("textarea");
+			main.appendChild(textArea);
+
+		}
+	</script>
+
+</body>
+
+</html>
