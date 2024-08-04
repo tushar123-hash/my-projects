@@ -1,0 +1,259 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#NavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#NavB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#NavBar div{
+    margin: 0.2em;
+    padding: 0.2rem;
+    text-decoration: none;
+}
+
+#NavBar a {
+    text-decoration: none;
+    color: #FF91A4;
+    border: 1px solid #FF91A4;
+    border-radius: 0.2rem;
+    padding: 0.5em;
+}
+
+/* #008080 */
+
+/* ================= Section - 1 =================== */
+
+
+
+#sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF91A4;
+    height: 80vh;
+    background: url("asset/bg10.png") no-repeat;
+    background-size: 100% 100%;
+
+    padding: 1em;
+    /* background: #B3667C; */
+    /* background: #EED5D9; */
+}
+
+#sec1 h1{
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+}
+#sec1 h2{
+    padding: 0;
+    margin: 0;
+}
+#sec1 h3{
+    color: white;
+    background-color: #fc6c84;
+}
+
+button{
+border: none;
+padding: 10px;
+margin-top: 1em;
+margin-right: 1rem;
+}
+
+.blc {
+background: #FF91A4;
+color: white;
+}
+
+
+
+.pik{
+    background-color: #fff;
+    border: 2px solid #FF91A4;
+    color: #FF91A4;
+}
+
+.pik:hover{
+    transition-duration: 1s;
+    background: #FF91A4;
+    color: #fff;
+}
+
+.floating { 
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 15px); }
+	100% { transform: translate(0, -0px); } 
+}
+
+
+/* =============== Section-2 ============== */
+#Sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    text-align: center;
+    padding: 2em;
+    background: url("asset/bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+#Sec2 button{
+    background:#FF91A4;
+    color: #fff;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.gridv{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.atysm{
+    background-color: #fff;
+    color: #FF91A4;
+}
+
+.atys{
+    color: #FF91A4;
+    padding: 0.5em;
+}
+
+
+#pln{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#pln:hover{
+    transition-duration: 20s;
+    transform: translateX(2500px);
+}
+
+/* ============== Section - 3 ============= */
+
+#Sec3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    color: #fff;
+    background: #FF91A4;
+}
+
+#sm{
+    text-align: center;
+}
+
+#sm a{
+    text-decoration: none;
+    padding-right: 1em;
+    color: #fff;
+}
+
+#frm {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    padding: 0em 2em 2em 2em;
+}
+
+#frm h1{
+    text-align: center;
+}
+
+#frm input, textarea{
+    border: none;
+    padding: 0.6em;
+}
+
+#frm button{
+    color: #FF91A4;
+    background: #fff;
+    width: 100%;
+}
+
+
+/* ============= Section - 4 =============== */
+*{
+    font-family: calibiri;
+}
+
+#Sec4 {
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background: #FF91A4;
+    color: #fff;
+    font-family: calbiri;
+    padding-bottom: 2em;
+}
+
+#vdb {
+    width: 400px;
+}
+
+#Sec4C button {
+    background: #000;
+    color: #fff;
+}
+
+#vdb img{
+    border: 2   px solid #fff;
+    width: inherit;
+}
+
+#Sec4C {
+    width: 400px;
+}
+
+.zig-zag-top:before{
+    background: 
+                linear-gradient(-45deg, #1ba1e2 16px, red 16px, blue 16px,  transparent 0), 
+                linear-gradient(45deg, #1ba1e2 16px, transparent 0);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: 22px 32px;
+    content: " ";
+    display: block;
+
+    height: 32px;
+    width: 100%;
+    
+    position: relative;
+    bottom: 64px;
+    left:0;
+}
+
+Started course in May. I am able to attend not more than total 30 questions in mock. 
+if i my try best can i crack SBI in remaining time. i am confident.
